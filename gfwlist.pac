@@ -1,6 +1,6 @@
 
 function FindProxyForURL(url, host) {
-    var proxy = "PROXY 127.0.0.1:%mixed-port%; SOCKS5 127.0.0.1:%mixed-port%; DIRECT;";
+    var proxy = "PROXY my.proxy:7890; SOCKS5 my.proxy:1235; DIRECT;";
 
     if (
         url.indexOf("http://85.17.73.31/") === 0 ||
